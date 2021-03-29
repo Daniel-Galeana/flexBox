@@ -1,0 +1,33 @@
+html,body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.div-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF8674;
+    padding: 10px;
+    border: 2px solid #4E4B48;
+}
+.div-container div{
+    border-radius: 6px;
+    background-color: #FFB3AB;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+    border: 2px solid #4E4B48;
+}
+@media only screen and (max-width: 750px){
+    .div-container{
+        display: flex;
+        flex-direction: column;
+    }
+    div#first   {order: 3;}
+    div#second  {order: 1;}
+    div#third   {order: 2;}
+}
